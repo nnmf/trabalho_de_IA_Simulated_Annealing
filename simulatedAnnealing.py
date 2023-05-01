@@ -19,8 +19,8 @@ def custo_rota(cidades, rota):
 
 def simulated_annealing(cidades, temperatura_inicial, taxa_resfriamento):
     rota_atual = list(range(len(cidades)))
-    random.shuffle(rota_atual) #define um ponto qualquer como ponto inicial
-    # random.shuffle(rota_atual[1:])  # define como ponto inicial a primeira tupla (5,5)
+    #random.shuffle(rota_atual) #define um ponto qualquer como ponto inicial
+    random.shuffle(rota_atual[1:])  # define como ponto inicial a primeira tupla (5,5)
     rota_atual = rota_atual
     custo_atual = custo_rota(cidades, rota_atual)
     temperatura = temperatura_inicial
