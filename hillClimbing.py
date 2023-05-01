@@ -19,8 +19,8 @@ def custo_rota(cidades, rota):
 
 def hill_climbing(cidades):
     rota_atual = list(range(len(cidades)))
-    # random.shuffle(rota_atual) #define um ponto qualquer como ponto inicial
-    random.shuffle(rota_atual[1:]) # define como ponto inicial a primeira tupla (5,5)
+    random.shuffle(rota_atual) #define um ponto qualquer como ponto inicial
+    # random.shuffle(rota_atual[1:]) # define como ponto inicial a primeira tupla (5,5)
     custo_atual = custo_rota(cidades, rota_atual)
     print("Ponto inicial:", cidades[rota_atual[0]])
     for cidade in rota_atual:
